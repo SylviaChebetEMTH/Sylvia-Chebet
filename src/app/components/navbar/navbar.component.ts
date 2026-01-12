@@ -29,7 +29,7 @@ export class NavbarComponent {
   }
 
   @HostListener('document:keydown.escape', ['$event'])
-  onEscapeKey(event: KeyboardEvent): void {
+  onEscapeKey(event: Event): void {
     if (this.isMobileMenuOpen) {
       this.closeMobileMenu();
     }
